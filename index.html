@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Introducción al Modelo de Objeto de Documento (DOM)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        #content {
+            border: 1px solid #ccc;
+            padding: 20px;
+            background-color: #f7f7f7;
+        }
+
+        .code {
+            background-color: #f2f2f2;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>El Modelo de Objeto de Documento (DOM)</h1>
+
+    <div id="content">
+        <p>El <strong>Modelo de Objeto de Documento (DOM)</strong> es una representación programática de la estructura de un documento HTML. Permite a los programadores acceder y manipular los elementos y contenidos de una página web a través del código JavaScript.</p>
+
+        <p>Por ejemplo, puedes cambiar el contenido de un elemento HTML, agregar nuevos elementos o eliminarlos, y modificar atributos de manera dinámica.</p>
+
+        <p>El DOM organiza los elementos de la página en un árbol de nodos, donde cada elemento es un nodo. Esto facilita la navegación y manipulación de la página mediante scripts.</p>
+
+        <p>En resumen, el DOM es una parte esencial para el desarrollo web interactivo y dinámico, ya que permite la creación de aplicaciones web complejas y ricas en funcionalidades.</p>
+
+        <h2>Ejemplo de Acceso y Modificación del DOM:</h2>
+        <div class="code">
+            <!-- Ejemplo de código JavaScript -->
+            <pre>
+<code>
+// Accede a un elemento por su ID
+var miParrafo = document.getElementById('miParrafo');
+
+// Cambia el contenido de un párrafo
+miParrafo.innerHTML = 'Este es un nuevo texto.';
+</code>
+            </pre>
+        </div>
+
+        <p>En el ejemplo de código anterior, hemos accedido a un elemento con el ID "miParrafo" y hemos cambiado su contenido utilizando la propiedad `innerHTML` del elemento. Esto es solo un ejemplo simple de cómo puedes interactuar con el DOM.</p>
+    </div>
+
+    <!-- Un párrafo con el ID "miParrafo" para el ejemplo de código -->
+    <p id="miParrafo">Este es un párrafo de ejemplo.</p>
+
+</body>
+</html>
